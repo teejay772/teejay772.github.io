@@ -1,0 +1,185 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>CV · Nimasha T. Ganegoda Gei</title>
+<meta name="description" content="Curriculum vitae of Nimasha T. Ganegoda Gei: computational chemistry, quantum chemistry research and systematic trading research.">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600&family=Atkinson+Hyperlegible:ital,wght@0,400;0,700;1,400&display=swap">
+<style>
+/* A conventional CV: one white sheet, black text, ruled section headings, dates on the right.
+   It stays light in dark mode on purpose, because it is a document meant for printing. */
+:root{color-scheme:light;--ink:#1A1D23;--muted:#474E5C;--rule:#1A1D23;--desk:#ECE9E1;--accent:#1F6F8B;
+  --display:'Fraunces',Georgia,serif;--body:'Atkinson Hyperlegible',system-ui,sans-serif}
+*{box-sizing:border-box}
+html{background:var(--desk)}
+body{margin:0;color:var(--ink);font-family:var(--body);font-size:14.5px;line-height:1.45}
+a{color:var(--accent);text-underline-offset:2px}
+.bar{max-width:820px;margin:0 auto;padding:18px 16px;display:flex;justify-content:space-between;gap:12px;font-size:14px}
+.bar a,.bar button{font:inherit;cursor:pointer;text-decoration:none;border:1px solid #CFCABD;background:#fff;color:var(--ink);border-radius:999px;padding:7px 16px}
+.bar a:hover{border-color:var(--accent);color:var(--accent)}
+.bar .primary{background:var(--accent);border-color:var(--accent);color:#fff}
+.bar .primary:hover{opacity:.9}
+.bar a:focus-visible,.bar button:focus-visible{outline:2px solid var(--accent);outline-offset:3px}
+.sheet{background:#fff;max-width:820px;margin:0 auto 56px;padding:56px 64px;box-shadow:0 1px 4px rgba(0,0,0,.14)}
+
+h1{font-family:var(--display);font-weight:600;font-size:31px;line-height:1.15;text-align:center;margin:0 0 6px;letter-spacing:.01em}
+.contact{text-align:center;font-size:13.5px;color:var(--muted);margin:0}
+.contact a{color:inherit}
+h2{font-size:12.5px;font-weight:700;letter-spacing:.11em;text-transform:uppercase;margin:22px 0 9px;padding-bottom:3px;border-bottom:1.5px solid var(--rule)}
+p{margin:0}
+.entry{margin-bottom:11px;break-inside:avoid}
+.entry:last-child{margin-bottom:0}
+.head{display:flex;justify-content:space-between;align-items:baseline;gap:18px}
+.head b{font-weight:700}
+.date{white-space:nowrap;font-variant-numeric:tabular-nums;color:var(--muted)}
+.sub{font-style:italic;color:var(--muted)}
+ul{margin:4px 0 0;padding-left:18px}
+li{margin-bottom:2px}
+.skills{display:grid;grid-template-columns:200px minmax(0,1fr);gap:4px 14px;margin:0}
+.skills dt{font-weight:700}
+.skills dd{margin:0}
+.plain{list-style:none;padding:0;margin:0}
+.plain li{display:flex;justify-content:space-between;gap:18px;margin-bottom:3px}
+
+@media (max-width:640px){
+  .sheet{padding:28px 20px;margin-bottom:24px}
+  .head,.plain li{flex-direction:column;gap:0}
+  .skills{grid-template-columns:1fr;gap:0}
+  .skills dd{margin-bottom:8px}
+}
+@page{size:A4;margin:15mm 16mm}
+@media print{
+  html{background:#fff}
+  body{font-size:10pt;line-height:1.38}
+  .bar{display:none}
+  .sheet{box-shadow:none;margin:0;padding:0;max-width:none}
+  a{color:inherit;text-decoration:none}
+  h1{font-size:21pt}
+  h2{margin-top:13pt}
+}
+</style>
+</head>
+<body>
+
+<nav class="bar" aria-label="CV actions">
+  <a href="./">← Back to site</a>
+  <button class="primary" type="button" onclick="window.print()">Save as PDF</button>
+</nav>
+
+<main class="sheet">
+
+  <h1>Nimasha T. Ganegoda Gei</h1>
+  <p class="contact">Dubai, UAE &nbsp;|&nbsp; <a href="mailto:thejanieganegoda@gmail.com">thejanieganegoda@gmail.com</a> &nbsp;|&nbsp; <a href="https://teejay772.github.io">teejay772.github.io</a> &nbsp;|&nbsp; <a href="https://github.com/teejay772">github.com/teejay772</a></p>
+
+  <h2>Professional Summary</h2>
+  <p>Computational chemist (MS, Northeastern University) with four years of research in quantum chemistry, now building systematic long/short models on gold and bitcoin. Experienced in numerical simulation on HPC systems, in validating computational methods against experiment, and in Python-based data analysis. Applies the same discipline to markets: trading rules taken from the published literature, backtested net of transaction costs, and judged out of sample.</p>
+
+  <h2>Education</h2>
+  <div class="entry">
+    <div class="head"><b>Northeastern University</b><span class="date">Boston, MA</span></div>
+    <div class="head"><span>MS Chemistry</span><span class="date">December 2025</span></div>
+    <p class="sub">Department of Chemistry &amp; Chemical Biology • Research Advisor: Steven Lopez</p>
+    <p>Entered the PhD program on a full scholarship and left in December 2025 with the MS.</p>
+  </div>
+  <div class="entry">
+    <div class="head"><b>University of Colombo</b><span class="date">Colombo, Sri Lanka</span></div>
+    <div class="head"><span>B.Sc. (Hons) Computational Chemistry</span><span class="date">July 2023</span></div>
+    <p class="sub">Department of Chemistry • Research Advisor: WMC Sameera</p>
+  </div>
+
+  <h2>Technical Skills</h2>
+  <dl class="skills">
+    <dt>Quantum Chemistry</dt><dd>DFT, TD-DFT, CASSCF, CASPT2, Force Fields, Semi-Empirical Methods</dd>
+    <dt>Simulation &amp; Modeling Tools</dt><dd>Gaussian, Molcas, PyRAI2MD, Schrödinger, CREST</dd>
+    <dt>Programming &amp; Data Tools</dt><dd>Python (NumPy, Pandas, scikit-learn), R, Java, Bash, Git, Jupyter</dd>
+    <dt>Machine Learning</dt><dd>Property prediction, regression/classification models</dd>
+    <dt>Systematic Trading</dt><dd>Trend signals, volatility targeting, backtesting net of costs, walk-forward validation, Sharpe ratio inference</dd>
+    <dt>Other</dt><dd>HPC (SLURM), GPU acceleration (CUDA, NVIDIA), scientific writing, workflow automation</dd>
+    <dt>Languages</dt><dd>English (IELTS Academic 7.0), Sinhalese (native), Italian and Spanish (elementary)</dd>
+  </dl>
+
+  <h2>Research Projects</h2>
+  <div class="entry">
+    <div class="head"><b>Systematic Long/Short Models on XAU/USD and BTC/USD</b><span class="date">2026 – Present</span></div>
+    <p class="sub">Independent research • <a href="https://teejay772.github.io/quant-notes/">teejay772.github.io/quant-notes</a></p>
+    <ul>
+      <li>Specifying a daily trend model and an intraday model from the published literature under a sixteen-week research plan, with walk-forward validation and evaluation on a simulated account.</li>
+      <li>Built a Python backtester that enforces a one-bar execution lag and deducts transaction costs and carry, with summary statistics and walk-forward selection, documented line by line.</li>
+      <li>Wrote interactive notes on time-series momentum, EWMA volatility estimation, backtest errors and their controls, and Sharpe ratio estimation including the deflated Sharpe ratio.</li>
+    </ul>
+  </div>
+  <div class="entry">
+    <div class="head"><b>Excited-State Dynamics of PALBOX, a Strained Cyclobutane Diazirine Photoaffinity Tag</b><span class="date">Apr 2025 – Dec 2025</span></div>
+    <p class="sub">Research Assistant, Northeastern University • Advisor: Prof. Steven Lopez</p>
+    <ul>
+      <li>Investigated the excited-state dynamics, the role of reactive intermediates and the effect of ring strain on the selectivity of PALBOX against minimalist alkyl diazirine tags.</li>
+      <li>Characterized key molecular orbitals and electronic structure during the photochemical reaction with multiconfigurational CASSCF methods at the SA(2)-CASSCF/ANO-S-VDZP level of theory.</li>
+      <li>Compared vertical excitation energies and oscillator strengths from TD-DFT (ωB97X-D/aug-cc-pVTZ), SA(2)-CASSCF(6,6) and SA(2)-XMS-CASPT2(6,6) to validate the methods used for the reactive intermediates.</li>
+    </ul>
+  </div>
+  <div class="entry">
+    <div class="head"><b>Computational Elucidation of a Non-De Mayo Photochemical Pathway</b><span class="date">2025</span></div>
+    <p class="sub">Lopez Group, Northeastern University</p>
+    <ul>
+      <li>Studied the mechanism of a 1,3-dicarbonyl/amino-alkene photoreaction that departs from the established De Mayo pathway, using transition-state and TD-DFT calculations alongside the experimental evidence.</li>
+    </ul>
+  </div>
+  <div class="entry">
+    <div class="head"><b>Bacteriocin–BamA Interactions for Antibiotic Development Against Gram-Negative Bacteria</b><span class="date">Jan 2025 – Apr 2025</span></div>
+    <p class="sub">Course Project, Northeastern University • Instructor: Prof. Mary Jo Ondrechen • Collaborator: Prof. Thiago Monteiro</p>
+    <ul>
+      <li>Built consensus structural models of <i>Pseudomonas</i> BamA from an alignment of 100 sequences across 37 species, using YASARA homology modeling and AlphaFold2, validated with Ramachandran analysis and QMEAN scoring.</li>
+      <li>Ran protein–protein docking with HADDOCK 2.4 and ClusPro 2.2 to map bacteriocin binding interfaces, and checked the predictions against experimentally resolved BamA–inhibitor complexes.</li>
+    </ul>
+  </div>
+  <div class="entry">
+    <div class="head"><b>Reactions Between CH<sub>3</sub>OH and the OH Radical on Interstellar Ices</b><span class="date">Jan 2022 – Apr 2023</span></div>
+    <p class="sub">University of Colombo • Advisor: Dr. WMC Sameera</p>
+    <ul>
+      <li>Investigated the CH<sub>3</sub>OH + OH reaction mechanism in the presence of explicit methanol molecules, identifying two competing pathways that lead to CH<sub>3</sub>O and CH<sub>2</sub>OH radicals.</li>
+      <li>Showed with DFT calculations that the reaction barriers are sensitive to the number of surrounding methanol molecules and to the local chemical environment.</li>
+      <li>Calculated classical and quantum-corrected rate constants using HTST with Wigner and Eckart tunneling corrections, revealing enhanced CH<sub>2</sub>OH formation at low temperature.</li>
+    </ul>
+  </div>
+
+  <h2>Teaching Experience</h2>
+  <div class="entry">
+    <div class="head"><b>Upper-Level Laboratory Teaching Assistant, Physical Chemistry</b><span class="date">Sep 2024 – Apr 2025</span></div>
+    <p class="sub">Northeastern University</p>
+    <ul>
+      <li>Led two weekly laboratory sections, managing preparation, organization and grading for more than 36 students.</li>
+      <li>Trained and mentored students in experimental design, data analysis and advanced laboratory techniques.</li>
+    </ul>
+  </div>
+
+  <h2>Professional Development</h2>
+  <div class="entry">
+    <div class="head"><b>ACS Leader Scholar Program</b><span class="date">Jan 2024 – Dec 2024</span></div>
+    <p class="sub">American Chemical Society</p>
+    <ul>
+      <li>Selected for an ACS professional development cohort focused on leadership training, networking and career advancement in the chemical sciences.</li>
+    </ul>
+  </div>
+  <div class="entry">
+    <div class="head"><b>Multidisciplinary Research and Professional Development Skills for PhDs</b><span class="date">Aug 2024 – Sep 2024</span></div>
+    <p class="sub">Northeastern University</p>
+    <ul>
+      <li>Worked in a cross-disciplinary team to develop a structured research proposal and presented it to peers and program facilitators.</li>
+    </ul>
+  </div>
+
+  <h2>Honors and Awards</h2>
+  <ul class="plain">
+    <li><span>ACS Leaders Scholar Fellowship</span><span class="date">2024</span></li>
+    <li><span>Northeastern College of Science Fully Funded PhD Scholarship</span><span class="date">2023</span></li>
+  </ul>
+
+  <h2>Writing</h2>
+  <ul class="plain">
+    <li><span><b>The Abyss</b>, a science journal for a general audience with evidence-led articles • <a href="https://theabyssos.com">theabyssos.com</a></span><span class="date">2026 – Present</span></li>
+  </ul>
+
+</main>
+</body>
+</html>
